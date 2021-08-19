@@ -1,0 +1,7 @@
+.image {
+  width: 3rem;
+  transition: 0.5s;
+  &:hover {
+    width: 7rem;
+  }
+}

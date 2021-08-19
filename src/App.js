@@ -1,10 +1,10 @@
-import './App.css';
-import Table from './components/MainTable/Table';
+import './App.scss';
+import Table from './components/Table/Table';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="header-app">
         This is recruitment task for Qarson company.
       </header>
       <Table/>
