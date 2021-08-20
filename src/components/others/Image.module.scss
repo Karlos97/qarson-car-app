@@ -1,8 +1,10 @@
 .image {
-  width: 3rem;
+  width: 4rem;
   transition: 0.5s;
   display: block;
+  margin-left: 1rem;
+  border-radius: .5rem;
   &:hover {
-    width: 5.5rem;
+    width: 8.5rem;
   }
 }

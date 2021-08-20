@@ -1,12 +1,11 @@
-import React from "react";
-import Row from "../Row/Row";
+import React from 'react'
+import Row from '../Row/Row'
 
 const Rows = (props) => {
   const rows = props.data.map((car, id) => {
-
     return (
       <Row
-      
+
         availability={car.availability}
         photo={car.photo}
         model={car.model}
@@ -17,8 +16,8 @@ const Rows = (props) => {
         handleDeleteRow={props.handleDeleteRow}
         changeAvailability={props.changeAvailability}
       />
-    );
-  });
-  return rows;
-};
-export default Rows;
+    )
+  })
+  return rows
+}
+export default Rows

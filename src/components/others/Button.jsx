@@ -1,11 +1,11 @@
-import React from "react";
-import classes from "./Button.module.scss";
+import React from 'react'
+import classes from './Button.module.scss'
 
 const Button = (props) => {
   return (
     <button className={classes.button} onClick={props.onClick} id={props.id}>
       {props.children}
     </button>
-  );
-};
-export default Button;
+  )
+}
+export default Button

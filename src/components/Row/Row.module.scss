@@ -1,7 +1,13 @@
-.name {
+.th {
   display: flex;
-  // flex-direction: column;
-align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p{
+    margin:0;
+  }
+
 }
 
 .available {
@@ -11,3 +17,4 @@ align-content: center;
 .not-available {
   color: red;
 }
+
