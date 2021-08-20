@@ -4,9 +4,6 @@ import Button from '../others/Button'
 import classes from './Row.module.scss'
 
 const functionName = (props) => {
-  // const removeRow = id => {
-  // console.log(id)
-  // }
   const photo = props.photo ? (
     <Image image={props.photo} model={props.model} />
   ) : null
