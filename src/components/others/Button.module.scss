@@ -1,0 +1,23 @@
+$button-normal:#a4c83f;
+$button-hover:#8eaf32;
+
+.button {
+  margin: 1rem 0 1rem 0;
+//   display: block;
+  height: 1.6rem;
+  width: 10rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+font-weight: 700;
+  background-color: $button-normal;
+  color: white;
+  border-color: $button-normal;
+
+  &:hover {
+    background-color: $button-hover;
+    color: white;
+    border-color: $button-hover;
+    transform: scale(1.05);
+  }
+}

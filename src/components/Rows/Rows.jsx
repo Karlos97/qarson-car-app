@@ -1,11 +1,8 @@
 import React from "react";
 import Row from "../Row/Row";
-import classes from "./Rows.module.scss";
 
 const Rows = (props) => {
-
   const rows = props.data.map((car, id) => {
-    console.log(id%2)
 
     return (
       <Row
@@ -15,8 +12,10 @@ const Rows = (props) => {
         model={car.model}
         engine={car.engine}
         make={car.make}
-        key={id}
-        deleteItem={props.deleteItem}
+        key={car.id}
+        id={car.id}
+        handleDeleteRow={props.handleDeleteRow}
+        changeAvailability={props.changeAvailability}
       />
     );
   });
