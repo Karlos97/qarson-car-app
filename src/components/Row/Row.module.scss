@@ -4,10 +4,9 @@
   justify-content: center;
   flex-direction: column;
 
-  p{
-    margin:0;
+  p {
+    margin: 0;
   }
-
 }
 
 .available {
@@ -23,14 +22,9 @@
   transition: 0.5s;
   display: block;
   margin-left: 1rem;
-  border-radius: .5rem;
-  &:hover {
-    width: 8.5rem;
-  }
-}.image-big {
-  // width: 4rem;
-  // transition: 0.5s;
-  // display: block;
-  // margin-left: 1rem;
-  // border-radius: .5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.image-big {
+  border-radius: 0.5rem;
 }

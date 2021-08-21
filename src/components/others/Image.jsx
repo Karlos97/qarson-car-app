@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Image = (props) => {
   return (
@@ -8,6 +8,6 @@ const Image = (props) => {
       className={props.class}
       onClick={props.onClick}
     />
-  );
-};
-export default Image;
+  )
+}
+export default Image

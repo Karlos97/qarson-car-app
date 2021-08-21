@@ -1,27 +1,27 @@
-import React, { useState, Fragment } from "react";
-import Image from "../others/Image";
-import Button from "../others/Button";
-import classes from "./Row.module.scss";
-import Modal from "../Modal/Modal";
+import React, { useState, Fragment } from 'react'
+import Image from '../others/Image'
+import Button from '../others/Button'
+import classes from './Row.module.scss'
+import Modal from '../Modal/Modal'
 
 const Row = (props) => {
-  const [showCar, setShowCar] = useState(false);
+  const [showCar, setShowCar] = useState(false)
 
   const onShowCar = () => {
-    setShowCar(!showCar);
-  };
+    setShowCar(!showCar)
+  }
   const onHideCar = () => {
-    setShowCar(!showCar);
-  };
+    setShowCar(!showCar)
+  }
 
   const photo = props.photo ? (
     <Image
       image={props.photo}
       model={props.model}
-      class={classes["image-small"]}
+      class={classes['image-small']}
       onClick={onShowCar}
     />
-  ) : null;
+  ) : null
 
   return (
     <>
@@ -30,14 +30,14 @@ const Row = (props) => {
           <Image
             image={props.photo}
             model={props.model}
-            class={classes["image-small"]}
+            class={classes['image-big']}
           />
         </Modal>
       )}
       <tr
         id={props.id}
         className={
-          props.availability ? classes.available : classes["not-available"]
+          props.availability ? classes.available : classes['not-available']
         }
       >
         <th>
@@ -48,7 +48,7 @@ const Row = (props) => {
         </th>
         <th>{props.model}</th>
         <th>{props.engine}</th>
-        <th>{props.availability ? "tak" : "nie"}</th>
+        <th>{props.availability ? 'tak' : 'nie'}</th>
         <th>
           <Button onClick={props.handleDeleteRow} id={props.id}>
             Usun z listy
@@ -59,6 +59,6 @@ const Row = (props) => {
         </th>
       </tr>
     </>
-  );
-};
-export default Row;
+  )
+}
+export default Row
