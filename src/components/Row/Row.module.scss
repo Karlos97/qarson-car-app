@@ -1,7 +1,12 @@
-.name {
+.th {
   display: flex;
-  // flex-direction: column;
-align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+  }
 }
 
 .available {
@@ -10,4 +15,16 @@ align-content: center;
 
 .not-available {
   color: red;
+}
+
+.image-small {
+  width: 4rem;
+  transition: 0.5s;
+  display: block;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.image-big {
+  border-radius: 0.5rem;
 }
