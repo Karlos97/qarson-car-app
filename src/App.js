@@ -1,15 +1,17 @@
-import './App.css';
-import Table from './components/MainTable/Table';
+import './App.scss'
+import Table from './components/Table/Table'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className='App'>
+      <header className='header-app'>
         This is recruitment task for Qarson company.
       </header>
-      <Table/>
+      {/* {console.log(dataFetched)} */}
+      <Table />
+      {/* {false ? console.log("true") : console.log("false")} */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

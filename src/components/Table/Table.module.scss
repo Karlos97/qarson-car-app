@@ -1,0 +1,37 @@
+table {
+  width: 50%;
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
+  border-collapse: collapse;
+  border-radius: 8px;
+  border-style: hidden;
+  overflow: hidden;
+  thead {
+    th {
+      font-size: 1.15rem;
+    }
+  }
+  tbody {
+    tr {
+      height: 6.5rem;
+      &:nth-child(even) {
+        background: #f9f4ff;
+      }
+    }
+  
+  }
+}
+
+.table-head {
+  height: 3rem;
+  background: rgb(120, 88, 227);
+  border-radius: 1rem;
+  color: white;
+  &-name{
+  cursor: pointer;
+  }
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
