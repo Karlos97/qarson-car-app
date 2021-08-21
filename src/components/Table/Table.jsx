@@ -73,6 +73,7 @@ const Table = (props) => {
           )}
         </tbody>
       </table>
+
     </section>
   )
 }

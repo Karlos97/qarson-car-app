@@ -1,9 +1,13 @@
-import React from 'react'
-import classes from './Image.module.scss'
+import React from "react";
 
-const Image = ({ model, image }) => {
+const Image = (props) => {
   return (
-    <img alt={`Car${model}`} src={image} className={classes.image} />
-  )
-}
-export default Image
+    <img
+      alt={`Car${props.model}`}
+      src={props.image}
+      className={props.class}
+      onClick={props.onClick}
+    />
+  );
+};
+export default Image;

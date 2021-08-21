@@ -2,6 +2,9 @@ import React from 'react'
 import Row from '../Row/Row'
 
 const Rows = (props) => {
+
+
+
   const rows = props.data.map((car, id) => {
     return (
       <Row
