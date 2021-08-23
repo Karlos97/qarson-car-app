@@ -7,7 +7,7 @@ const Table = (props) => {
   const [dataFetched, setDataFetched] = useState(false)
   const [sortedTable, setSortedTable] = useState(false)
   const [stockData, setStockData] = useState('')
-
+  const paragraphClass = classes['main-table-head-paragraph']
   useEffect(() => {
     fetch(
       'https://bitbucket.org/dacsoftware/recruitment/raw/e824e5c44befb603535a33ea88a4888c92cf1042/data.json'
@@ -51,18 +51,43 @@ const Table = (props) => {
   return (
     <section className={classes.table}>
       <table className={classes['main-table']}>
-        <thead className={`${classes['main-table-head']} `}>
+        <thead className={classes['main-table-head']}>
           <tr>
-            <th
-              onClick={sortByName}
-              className={classes['main-table-head-name']}
-            >
-              Nazwa
+            <th onClick={sortByName} className={classes['main-table-head-th-1']}>
+              <p
+                className={paragraphClass}
+              >
+                Nazwa
+              </p>
             </th>
-            <th>Model</th>
-            <th>Silnik</th>
-            <th>Dostepnosc</th>
-            <th>Akcje</th>
+            <th className={classes['main-table-head-th-2']}>
+              <p
+                className={paragraphClass}
+              >
+                Model
+              </p>
+            </th>
+            <th className={classes['main-table-head-th-3']}>
+              <p
+                className={paragraphClass}
+              >
+                Silnik
+              </p>
+            </th>
+            <th className={classes['main-table-head-th-3']}>
+              <p
+                className={paragraphClass}
+              >
+                Dostepnosc
+              </p>
+            </th>
+            <th className={classes['main-table-head-th-4']}>
+              <p
+                className={paragraphClass}
+              >
+                Akcje
+              </p>
+            </th>
           </tr>
         </thead>
         <tbody className={classes['main-table-body']}>

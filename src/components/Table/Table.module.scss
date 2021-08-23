@@ -3,24 +3,46 @@
   justify-content: center;
 }
 .main-table {
-  width: 50%;
+  width: 70%;
   box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
   border-collapse: collapse;
   border-radius: 8px;
   border-style: hidden;
   overflow: hidden;
   &-head {
-    height: 3rem;
+    height: 4rem;
     background: rgb(120, 88, 227);
     border-radius: 1rem;
     color: white;
-    &-name {
+    &-th-1 {
       cursor: pointer;
+      padding-left: 2rem;
+      width: 20rem;
+    }
+    &-th-2 {
+    padding-left: 2rem;
+    width: 7rem;
+    }
+    &-th-3 {
+      padding-left: 2rem;
+      width: 13rem;
+    }
+    &-th-4 {
+      padding-left: 1rem;
+    }
+    &-paragraph {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
   }
-  &-body-1 {
+  &-body {
     tr {
-      height: 6.5rem;
+      height: 3.5rem;
       &:nth-child(even) {
         background: #f9f4ff;
       }
