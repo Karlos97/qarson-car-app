@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import classes from './Table.module.scss'
-
 import Rows from '../Rows/Rows'
 import { uuid } from 'uuidv4'
 
@@ -46,23 +45,29 @@ const Table = (props) => {
     setStockData(stockData.filter((el) => el.id !== event.target.id))
   }
   const sortByName = () => {
-    setStockData(stockData.sort((el1, el2) => el1.make[0] > el2.make[0] ? !sortedTable : sortedTable))
+    setStockData(
+      stockData.sort((el1, el2) =>
+        el1.make[0] > el2.make[0] ? !sortedTable : sortedTable
+      )
+    )
     setSortedTable(!sortedTable)
   }
 
   return (
     <section className={classes.table}>
-      <table>
-        <thead className={classes['table-head']}>
-          <tr>
-            <th onClick={sortByName} className={classes['table-head-name']}>Nazwa</th>
+      <table className={classes["main-table"]}>
+        <thead className={`${classes['main-table-head']} `}>
+          <tr >
+            <th onClick={sortByName} className={classes['main-table-head-name']}>
+              Nazwa
+            </th>
             <th>Model</th>
             <th>Silnik</th>
             <th>Dostepnosc</th>
             <th>Akcje</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody  className={classes['main-table-body']}>
           {dataFetched && (
             <Rows
               data={stockData}
@@ -73,7 +78,6 @@ const Table = (props) => {
           )}
         </tbody>
       </table>
-
     </section>
   )
 }
