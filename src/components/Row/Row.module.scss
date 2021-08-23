@@ -1,10 +1,12 @@
 .th {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   &-paragraph {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0 0 2rem;
     margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
   }
 }
 .available {
@@ -16,10 +18,9 @@
 .image-small {
   width: 4rem;
   transition: 0.5s;
-  display: block;
-  margin-left: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  margin-left: 1rem;
 }
 .image-big {
   border-radius: 0.5rem;

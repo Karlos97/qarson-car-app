@@ -6,6 +6,8 @@ import Modal from '../Modal/Modal'
 
 const Row = (props) => {
   const [showCar, setShowCar] = useState(false)
+  const thClass = classes.th
+  const paragraphClass = classes['th-paragraph']
   const handleOnShowCar = () => {
     setShowCar(!showCar)
   }
@@ -38,14 +40,23 @@ const Row = (props) => {
         }
       >
         <th>
-          <div className={classes.th}>
-            <p className={classes['th-paragraph']}>{props.make}</p>
+          <div className={thClass}>
+            <p
+              className={paragraphClass}
+            >{`${props.make} ${props.model} ${props.engine}`}
+            </p>
             {photo}
           </div>
         </th>
-        <th>{props.model}</th>
-        <th>{props.engine}</th>
-        <th>{props.availability ? 'tak' : 'nie'}</th>
+        <th>
+          <p className={paragraphClass}>{props.model}</p>
+        </th>
+        <th>
+          <p className={paragraphClass}>{props.engine}</p>
+        </th>
+        <th>
+          <p className={paragraphClass}>{props.availability ? 'tak' : 'nie'}</p>
+        </th>
         <th>
           <Button onClick={props.handleOnDeleteRow} id={props.id}>
             Usun z listy
