@@ -12,7 +12,7 @@ const Rows = (props) => {
         make={car.make}
         key={car.id}
         id={car.id}
-        handleDeleteRow={props.handleDeleteRow}
+        handleOnDeleteRow={props.handleOnDeleteRow}
         changeAvailability={props.changeAvailability}
       />
     )

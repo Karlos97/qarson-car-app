@@ -39,7 +39,7 @@ const Row = (props) => {
       >
         <th>
           <div className={classes.th}>
-            <p className={classes["th-paragraph"]}>{props.make}</p>
+            <p className={classes['th-paragraph']}>{props.make}</p>
             {photo}
           </div>
         </th>
@@ -47,7 +47,7 @@ const Row = (props) => {
         <th>{props.engine}</th>
         <th>{props.availability ? 'tak' : 'nie'}</th>
         <th>
-          <Button onClick={props.handleDeleteRow} id={props.id}>
+          <Button onClick={props.handleOnDeleteRow} id={props.id}>
             Usun z listy
           </Button>
           <Button onClick={props.changeAvailability} id={props.id}>
