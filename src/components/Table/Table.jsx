@@ -23,12 +23,7 @@ const Table = (props) => {
         setDataFetched(true)
       })
       .catch((err) => alert('ERROR'))
-    //   $.ajax({
-    //     url : "https://bitbucket.org/dacsoftware/recruitment/raw/e824e5c44befb603535a33ea88a4888c92cf1042/data.json"
-    // }).done(res => {
-    //     console.log(res);
-    // })
-  }, [])
+  }, [setStockData, setDataFetched])
 
   const onChangeAvailability = (event) => {
     setStockData(
@@ -55,10 +50,13 @@ const Table = (props) => {
 
   return (
     <section className={classes.table}>
-      <table className={classes["main-table"]}>
+      <table className={classes['main-table']}>
         <thead className={`${classes['main-table-head']} `}>
-          <tr >
-            <th onClick={sortByName} className={classes['main-table-head-name']}>
+          <tr>
+            <th
+              onClick={sortByName}
+              className={classes['main-table-head-name']}
+            >
               Nazwa
             </th>
             <th>Model</th>
@@ -67,11 +65,11 @@ const Table = (props) => {
             <th>Akcje</th>
           </tr>
         </thead>
-        <tbody  className={classes['main-table-body']}>
+        <tbody className={classes['main-table-body']}>
           {dataFetched && (
             <Rows
               data={stockData}
-              handleDeleteRow={onDeleteRowHandler}
+              handleOnDeleteRow={onDeleteRowHandler}
               stockData={stockData}
               changeAvailability={onChangeAvailability}
             />

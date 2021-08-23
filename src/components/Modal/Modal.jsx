@@ -13,14 +13,8 @@ const Summary = (props) => (
 
 const Modal = (props) => (
   <>
-    {ReactDOM.createPortal(
-      <Backdrop onClose={props.onClose} />,
-      portalElement
-    )}
-    {ReactDOM.createPortal(
-      <Summary>{props.children}</Summary>,
-      portalElement
-    )}
+    {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portalElement)}
+    {ReactDOM.createPortal(<Summary>{props.children}</Summary>, portalElement)}
   </>
 )
 
