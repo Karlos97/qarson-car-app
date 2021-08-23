@@ -5,7 +5,6 @@ const Rows = (props) => {
   const rows = props.data.map((car, id) => {
     return (
       <Row
-
         availability={car.availability}
         photo={car.photo}
         model={car.model}

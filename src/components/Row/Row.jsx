@@ -6,27 +6,24 @@ import Modal from '../Modal/Modal'
 
 const Row = (props) => {
   const [showCar, setShowCar] = useState(false)
-
-  const onShowCar = () => {
+  const handleOnShowCar = () => {
     setShowCar(!showCar)
   }
-  const onHideCar = () => {
+  const handleOnHideCar = () => {
     setShowCar(!showCar)
   }
-
   const photo = props.photo ? (
     <Image
       image={props.photo}
       model={props.model}
       class={classes['image-small']}
-      onClick={onShowCar}
+      onClick={handleOnShowCar}
     />
   ) : null
-
   return (
     <>
       {showCar && (
-        <Modal onClose={onHideCar}>
+        <Modal onClose={handleOnHideCar}>
           <Image
             image={props.photo}
             model={props.model}
@@ -42,7 +39,7 @@ const Row = (props) => {
       >
         <th>
           <div className={classes.th}>
-            <p>{props.make}</p>
+            <p className={classes["th-paragraph"]}>{props.make}</p>
             {photo}
           </div>
         </th>

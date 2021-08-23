@@ -3,20 +3,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  p {
+  &-paragraph {
     margin: 0;
   }
 }
-
 .available {
   color: #7f7f7f;
 }
-
 .not-available {
   color: red;
 }
-
 .image-small {
   width: 4rem;
   transition: 0.5s;
