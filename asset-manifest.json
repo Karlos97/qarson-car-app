@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/qarson-car-app/static/css/main.ae437156.chunk.css",
-    "main.js": "/qarson-car-app/static/js/main.b3df1fad.chunk.js",
-    "main.js.map": "/qarson-car-app/static/js/main.b3df1fad.chunk.js.map",
+    "main.js": "/qarson-car-app/static/js/main.84bee218.chunk.js",
+    "main.js.map": "/qarson-car-app/static/js/main.84bee218.chunk.js.map",
     "runtime-main.js": "/qarson-car-app/static/js/runtime-main.543731cb.js",
     "runtime-main.js.map": "/qarson-car-app/static/js/runtime-main.543731cb.js.map",
     "static/js/2.5c7e57a6.chunk.js": "/qarson-car-app/static/js/2.5c7e57a6.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.543731cb.js",
     "static/js/2.5c7e57a6.chunk.js",
     "static/css/main.ae437156.chunk.css",
-    "static/js/main.b3df1fad.chunk.js"
+    "static/js/main.84bee218.chunk.js"
   ]
 }
